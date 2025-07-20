@@ -29,3 +29,24 @@ src/.idea/
 src/.name
 src/indexLayout.xml
 src/vcs.xml
+
+# Ignorar TestResults/ (gerado por dotnet test)
+**/TestResults/
+
+# Ignorar pastas de publicação
+**/publish/
+**/out/
+
+# Ignorar arquivos de pacotes nupkg locais
+*.nupkg
+
+# Ignorar arquivos de backup e temporários
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+
+# Ignorar arquivos gerador por Docker (se gerados localmente)
+docker-compose.override.yml
+.env
+
