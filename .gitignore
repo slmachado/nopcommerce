@@ -15,8 +15,8 @@
 *.log
 
 # Diretórios de saída de build
-[Bb]in/
-[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
 
 # Configs temporárias e específicas de IDE
 *.user

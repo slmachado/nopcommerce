@@ -162,7 +162,7 @@ public partial class EntityRepository<TEntity> : IRepository<TEntity> where TEnt
     /// </returns>
     public virtual async Task<TEntity> GetByIdAsync(int? id, Func<ICacheKeyService, CacheKey> getCacheKey = null, bool includeDeleted = true, bool useShortTermCache = false)
     {
-        if (!id.HasValue || id == 0)
+        if (id is null or 0)
             return null;
 
         async Task<TEntity> getEntityAsync()
