@@ -1,0 +1,31 @@
+# Rider / IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# Arquivos de build (binários)
+*.dll
+*.pdb
+*.exe
+*.app
+*.log
+
+# Diretórios de saída de build
+[Bb]in/
+[Oo]bj/
+
+# Configs temporárias e específicas de IDE
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Outros arquivos específicos detectados
+src/.idea/
+src/.name
+src/indexLayout.xml
+src/vcs.xml
